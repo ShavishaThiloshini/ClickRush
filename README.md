@@ -3,7 +3,7 @@
 A fast-paced, neon-styled **mini browser game** built with pure **HTML, CSS, and Vanilla JavaScript**.  
 Test your reflexes, chase high scores, and enjoy quick arcade-style fun right in your browser!
 
-👉 **Play Live:** https://YOUR_USERNAME.github.io/click-rush/
+👉 **Play Live:**(https://shavishathiloshini.github.io/ClickRush/)
 
 ---
 
