@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Click Rush ⚡ – neon arcade</title>
+  
+  <!-- Google Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Stats row -->
+    <div class="stats">
+      <div class="stat-item">⚡ Score <span id="scoreDisplay" class="stat-value">0</span></div>
+      <div class="stat-item">⏳ <span id="timerDisplay" class="stat-value">30</span>s</div>
+      <div class="stat-item">🔥 <span id="comboDisplay" class="stat-value">0</span></div>
+    </div>
+
+    <!-- Game area with canvas for particles -->
+    <div class="game-area" id="gameArea">
+      <canvas id="burst-canvas"></canvas>
+      <!-- Targets injected dynamically via JavaScript -->
+    </div>
+
+    <!-- Control panel -->
+    <div class="controls">
+      <button class="btn accent" id="restartBtn">↻ RESTART</button>
+      <button class="btn mute-toggle" id="muteBtn">🔊 SOUND</button>
+    </div>
+  </div>
+
+  <!-- Start screen -->
+  <div id="startScreen" class="screen">
+    <div class="screen-card">
+      <h1>⚡CLICK RUSH⚡</h1>
+      <p>tap targets · +10 hit · –5 miss<br>keep combo 🔥</p>
+      <div style="font-size: 2rem; margin: 1rem 0;">🎯</div>
+      <button class="btn accent" id="startBtn">START GAME</button>
+    </div>
+  </div>
+
+  <!-- Game over screen -->
+  <div id="gameOverScreen" class="screen hidden">
+    <div class="screen-card">
+      <h1>GAME OVER</h1>
+      <p>🏆 SCORE <span id="finalScoreSpan">0</span></p>
+      <p>🥇 HIGH SCORE <span id="highScoreSpan" class="highscore">0</span></p>
+      <button class="btn accent" id="playAgainBtn">PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <!-- Countdown overlay (bonus) -->
+  <div id="countdownDisplay" class="countdown-overlay hidden"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
