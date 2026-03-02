@@ -38,3 +38,41 @@ _No frameworks. No libraries. Just pure web fun._ 😄
 ---
 
 ## 📂 Project Structure
+click-rush/
+├── index.html
+├── style.css
+├── script.js
+└── sounds/
+└── click.mp3
+
+
+---
+
+## 🌍 Deployment
+This project is deployed using **GitHub Pages**.
+
+To deploy your own version:
+1. Fork or clone this repository
+2. Upload files to a GitHub repository
+3. Go to **Settings → Pages**
+4. Select:
+   - Branch: `main`
+   - Folder: `/root`
+5. Save and enjoy your live game 🎉
+
+---
+
+## ✨ Customization Ideas
+- 🎮 Add difficulty levels
+- 🏆 Online leaderboard
+- 🌀 Moving or shrinking targets
+- 🎨 Theme switcher (dark / neon / retro)
+- 🔊 Sound on/off toggle
+
+---
+
+## 👤 Author
+**Shavisha Thiloshini**  
+Made with ❤️ for fun & learning
+
+---
